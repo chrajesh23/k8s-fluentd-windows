@@ -1,5 +1,6 @@
 # Step 1
 
+create new namespace 
 ```
 kubectl apply -f poc/cloudwatch-namespace.yaml
 ```
@@ -10,7 +11,7 @@ kubectl apply -f poc/cloudwatch-namespace.yaml
 - modify fluent conf file if you need to customize
 
 
-update <<windows-fluentd-cloudwatch>> with generated docker image id at container section at -
+replace "windows-fluentd-cloudwatch"  word with generated docker image id at container section at -
  poc/fluentd-cloudwatch-windows-deamonset.yaml
 
 
