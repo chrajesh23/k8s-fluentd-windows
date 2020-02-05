@@ -41,4 +41,4 @@ kubectl get pods -n amazon-cloudwatch
 ```
 
 # step 5 
-Verify the FluentD Setup after you deploy application 
+Verify the FluentD Setup and cloud watch logs after you deploy application 
