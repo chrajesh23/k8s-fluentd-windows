@@ -21,3 +21,10 @@ eksctl create cluster -f cluster-spec.yaml --install-vpc-controllers
  ```
 kubectl get svc
  ```
+
+ change namespace 
+
+ ```
+ kubectl config set-context --current --namespace=default
+ ```
+ 
