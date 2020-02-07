@@ -22,8 +22,8 @@ configure map
 ```
 
 kubectl create configmap cluster-info \
---from-literal=cluster.name=cluster_name \
---from-literal=logs.region=region_name -n amazon-cloudwatch
+--from-literal=cluster.name=windows-prod \
+--from-literal=logs.region=us-west-2 -n amazon-cloudwatch
 
 ```
 
