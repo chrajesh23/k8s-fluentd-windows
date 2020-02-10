@@ -14,8 +14,8 @@ COPY --from=base ["C:\\opt\\td-agent", "C:\\opt\\td-agent"]
 COPY fluent.conf /fluent/conf/fluent.conf
 COPY custom/ /fluent/config/custom/
 
-RUN C:/opt/td-agent/embedded/bin/fluent-gem install fluent-plugin-kubernetes_metadata_filter && `
-    C:/opt/td-agent/embedded/bin/fluent-gem install fluent-plugin-multi-format-parser && `
+RUN C:/opt/td-agent/embedded/bin/fluent-gem install fluent-plugin-kubernetes_metadata_filter; `
+    C:/opt/td-agent/embedded/bin/fluent-gem install fluent-plugin-multi-format-parser; `
     C:/opt/td-agent/embedded/bin/fluent-gem install fluent-plugin-cloudwatch-logs
     
 # we need to install cloudwatch plugin 

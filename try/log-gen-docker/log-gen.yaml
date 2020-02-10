@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: logging-gen
 spec:
-  replicas: 4
+  replicas: 1
   template:
     metadata:
       labels:

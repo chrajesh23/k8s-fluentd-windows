@@ -1,0 +1,1 @@
+docker build -t vijayashankar/fluentd-windows-cw:ltsc2019 .

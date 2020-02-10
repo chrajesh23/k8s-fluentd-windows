@@ -1,4 +1,4 @@
-FROM microsoft/powershell:6.0.2-nanoserver-1709
+FROM mcr.microsoft.com/powershell:7.0.0-rc.2-nanoserver-1803
 
 ENV mb 1
 ENV runforever false

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: windows-server-iis
+spec:
+  selector:
+    matchLabels:
+      app: windows-server-iis
+      tier: backend
+      track: stable
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: windows-server-iis
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - name: log-gen
+        image: jsturtevant/loggen
+        env:
+        - name: runforever
+          value: "true"
+        imagePullPolicy: IfNotPresent
+      nodeSelector:
+        beta.kubernetes.io/os: windows
